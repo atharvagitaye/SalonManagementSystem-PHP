@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Home page hero section */
+.image-container {
+    position: relative;
+    max-width: 100%; /* Adjust the maximum width to your desired size */
+    margin: 0 auto; /* Center the image container horizontally */
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 700px;
+
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 10%; /* Adjust the left value to control the text position */
+    transform: translate(0%, -50%);
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+    color: #fff;
+    background: transparent; /* Remove background color */
+    border-radius: 5px;
+}
+
+.text-overlay h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.text-overlay p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff3300;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #fff; /* Set the background color */
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically center items */
+    padding: 0px 20px; /* Add padding for spacing */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove list bullets */
+}
+
+.navbar li {
+    display: inline; /* Display list items horizontally */
+    margin-left: 20px; /* Add spacing between items (margin-left instead of margin-right) */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underlines from links */
+    color: #333; /* Set the default text color */
+    transition: color 0.3s; /* Add a smooth color transition on hover */
+    
+}
+
+.navbar a:hover {
+    color: #ff9900; /* Change the text color on hover */
+}
+
+/* Style the logo and text */
+.logo {
+    display: flex; /* Use flexbox to align logo and text vertically */
+    align-items: center; /* Vertically center items */
+}
+
+.logo img {
+    width: 100px; /* Adjust the logo width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 10px; /* Add spacing between logo and text */
+}
+
+.logo span {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Set the text color */
+}
+
+/* Home page Service section */
+.services {
+    background-color: #f7f7f7;
+    padding: 40px;
+    text-align: center; /* Center-align the text within the container */
+}
+
+.services h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.services p {
+    font-size: 16px;
+    color: #666;
+    margin: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 20%; /* Adjust the logo size as needed */
+    max-height: 5%;
+}
+
+.footer-links ul,
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li,
+.footer-social ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+}
+
+/* ---------- Services Page --------- */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    border: 1px solid #ddd; /* Add a border around the table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Center-align table contents */
+    border-right: 1px solid #ddd; /* Add a vertical line between columns */
+}
+
+th:last-child, td:last-child {
+    border-right: none; /* Remove the vertical line for the last column */
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.other-page-title, .breadcrumb {
+    text-align: center;
+    color: white; 
+    background-color: #333;
+    padding: 2px;
+    margin: 0;
+}
+
+/* ---------- Appointment Page ---------- */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%; /* Make the button full width */
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px 0; /* Vertically centered text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #ff3300;
+}
+
+/* ---------- Contact Us page ---------- */
+.contact-us-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    margin-top: 20px;
+}
+
+.contact-details p {
+    margin: 10px 0;
+}
+
+.contact-details strong {
+    font-weight: bold;
+}

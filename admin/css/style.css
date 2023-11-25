@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* --------- Overall ---------- */
+table {
+    width: 100%;
+    margin: 0 10px; /* Add space between tables */
+    border-collapse: collapse;
+}
+
+table th, table td {
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    background-color: blue;
+}
+
+table td {
+    color: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    background-color: rgb(109, 113, 236);
+}
+
+a:visited, a:link {
+    color: white;
+}
+
+/* ---------- index.php / Sign-In page ---------- */
+
+.sign-in-container {
+    width: 300px;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; /* Center horizontally */
+    height: 200px; /* Fixed height for vertical centering */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally within the container */
+}
+
+.sign-in-container h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #007bff;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff3300;
+}
+
+/* ---------- Sidebar ----------*/
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+ul li a:hover {
+    background-color: #a7a4a4;
+}
+
+ul .nested {
+    display: none;
+}
+
+ul li:hover .nested {
+    display: block;
+}
+
+/* ----- Logout ----- */
+.logout {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.logout li {
+    margin-bottom: 10px;
+}
+
+.logout a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.logout a:hover {
+    background-color: #555;
+}
+
+/* ---------- Space for displaying content ---------- */
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* ---------- Dashboard ---------- */
+.table-container {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.full-width-table {
+    width: 100%;
+    margin: 0 10px; /* Add space between tables */
+    border-collapse: collapse;
+}
+
+.full-width-table th, .full-width-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
