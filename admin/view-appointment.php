@@ -13,7 +13,7 @@
             $conn = new mysqli("localhost", "root", "", "msms");
 
             if (strlen($_SESSION['VerifiedAdmin'] == 0)) {
-                echo "<script>window.location.href='index.php'</script>";
+                header('location:logout.php');
             }
         ?>
 
